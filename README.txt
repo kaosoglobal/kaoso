@@ -1,0 +1,1 @@
+Replace assets/logo.png with your Kaoso logo before deployment.
