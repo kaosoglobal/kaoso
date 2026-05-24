@@ -2,91 +2,230 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kaoso | Financial & Automation Solutions</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="container nav-wrapper">
-      <div class="logo-section">
-        <img src="assets/logo.png" alt="Kaoso Logo" class="logo">
-        <span class="brand">KAOSO</span>
+<header class="navbar">
+  <div class="container nav-wrapper">
+
+    <div class="logo-section">
+      <img src="assets/logo.png" alt="Kaoso Logo" class="logo">
+      <span class="brand">KAOSO</span>
+    </div>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+  </div>
+</header>
+
+<section class="hero" id="home">
+
+  <div class="container hero-grid">
+
+    <div class="hero-content">
+
+      <span class="tag">
+        Financial Services • Automation • Business Solutions
+      </span>
+
+      <h1>
+        Smart Financial & Automation Solutions
+        For Modern Businesses
+      </h1>
+
+      <p>
+        Kaoso helps businesses simplify GST, accounting,
+        compliance, payroll, bookkeeping, and automation
+        through modern digital systems.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary-btn">
+          Get Started
+        </a>
+
+        <a href="#services" class="btn secondary-btn">
+          Explore Services
+        </a>
       </div>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <button class="menu-btn" id="menuBtn">☰</button>
     </div>
-  </header>
 
-  <section class="hero" id="home">
-    <div class="container hero-grid">
+    <div class="glass-card">
 
-      <div class="hero-content">
-        <span class="tag">Financial Services • Automation • Growth</span>
+      <div class="card-top">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
 
-        <h1>
-          Smart Financial &
-          Business Automation
-          Solutions for Modern Companies
-        </h1>
+      <h3>Business Dashboard</h3>
 
+      <div class="stat-box">
+        <span>GST Accuracy</span>
+        <strong>99.8%</strong>
+      </div>
+
+      <div class="stat-box">
+        <span>Automation Efficiency</span>
+        <strong>+70%</strong>
+      </div>
+
+      <div class="stat-box">
+        <span>Business Productivity</span>
+        <strong>100%</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="services section" id="services">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>OUR SERVICES</span>
+      <h2>Professional Solutions For Businesses</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="icon">📊</div>
+        <h3>Accounting & Bookkeeping</h3>
         <p>
-          Kaoso helps businesses simplify accounting, GST,
-          compliance, bookkeeping, payroll, and automation workflows
-          through efficient digital systems.
+          Complete accounting support and reporting systems.
         </p>
-
-        <div class="hero-buttons">
-          <a href="#contact" class="btn primary-btn">Get Started</a>
-          <a href="#services" class="btn secondary-btn">Explore Services</a>
-        </div>
       </div>
 
-      <div class="hero-card">
-        <div class="glass-card">
-          <div class="card-top">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
+      <div class="service-card">
+        <div class="icon">🧾</div>
+        <h3>GST & Compliance</h3>
+        <p>
+          GST filing, registrations, returns, and compliance support.
+        </p>
+      </div>
 
-          <h3>Business Dashboard</h3>
-
-          <div class="stat-box">
-            <span>GST Filings</span>
-            <strong>99.8%</strong>
-          </div>
-
-          <div class="stat-box">
-            <span>Automation Efficiency</span>
-            <strong>+70%</strong>
-          </div>
-
-          <div class="stat-box">
-            <span>Process Accuracy</span>
-            <strong>100%</strong>
-          </div>
-        </div>
+      <div class="service-card">
+        <div class="icon">⚙️</div>
+        <h3>Business Automation</h3>
+        <p>
+          Workflow automation and process optimization solutions.
+        </p>
       </div>
 
     </div>
-  </section>
 
-  <script src="script.js"></script>
+  </div>
+
+</section>
+
+<section class="about section" id="about">
+
+  <div class="container about-grid">
+
+    <div>
+      <span class="mini-title">ABOUT KAOSO</span>
+
+      <h2>
+        Combining Finance With Smart Automation
+      </h2>
+
+      <p>
+        Kaoso supports modern businesses through technology-driven
+        financial and automation solutions.
+      </p>
+    </div>
+
+    <div class="about-box">
+
+      <div class="about-stat">
+        <h3>Modern</h3>
+        <p>Digital-first systems</p>
+      </div>
+
+      <div class="about-stat">
+        <h3>Reliable</h3>
+        <p>Accurate & process-driven</p>
+      </div>
+
+      <div class="about-stat">
+        <h3>Efficient</h3>
+        <p>Automation-focused workflows</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact section" id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>CONTACT</span>
+      <h2>Let’s Connect</h2>
+    </div>
+
+    <form class="contact-form">
+
+      <input type="text" placeholder="Your Name" required>
+
+      <input type="email" placeholder="Your Email" required>
+
+      <textarea rows="5" placeholder="Tell us about your requirement"></textarea>
+
+      <button type="submit" class="btn primary-btn full-btn">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <div class="container footer-content">
+
+    <h3>KAOSO</h3>
+
+    <p>
+      Financial Services • Automation • Business Solutions
+    </p>
+
+    <span>
+      © 2026 Kaoso. All Rights Reserved.
+    </span>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

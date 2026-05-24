@@ -1,1 +1,1 @@
-Replace assets/logo.png with your Kaoso logo before deployment.
+Upload your Kaoso logo inside assets folder as logo.png
