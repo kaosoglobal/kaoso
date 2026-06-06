@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MessageSquare, Send } from 'lucide-react'
+import { Mail, Phone, MessageSquare, Send, MapPin } from 'lucide-react'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -90,7 +90,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Phone</h3>
-                  <p className="text-dark-600 dark:text-dark-400">+91 XXXXXXXXXX</p>
+                  <a href="tel:+919560267221" className="text-dark-600 dark:text-dark-400 hover:text-primary-500 transition-colors">
+                    +91-9560267221
+                  </a>
                 </div>
               </motion.div>
 
@@ -100,7 +102,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">Email</h3>
-                  <p className="text-dark-600 dark:text-dark-400">contact@kaoso.in</p>
+                  <a href="mailto:contact@kaoso.in" className="text-dark-600 dark:text-dark-400 hover:text-primary-500 transition-colors">
+                    contact@kaoso.in
+                  </a>
                 </div>
               </motion.div>
 
@@ -110,7 +114,23 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-1">WhatsApp</h3>
-                  <p className="text-dark-600 dark:text-dark-400">+91 XXXXXXXXXX</p>
+                  <a href="https://wa.me/919560267221" target="_blank" rel="noopener noreferrer" className="text-dark-600 dark:text-dark-400 hover:text-primary-500 transition-colors">
+                    +91-9560267221
+                  </a>
+                </div>
+              </motion.div>
+
+              <motion.div variants={itemVariants} className="flex gap-4">
+                <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="text-primary-600 dark:text-primary-400" size={24} />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg mb-1">Office Address</h3>
+                  <p className="text-dark-600 dark:text-dark-400">
+                    Plot No. 4, 2nd Floor,<br />
+                    Minarch Tower, Sector-44,<br />
+                    Gurugram, Haryana - 122003
+                  </p>
                 </div>
               </motion.div>
 
@@ -213,16 +233,15 @@ export default function Contact() {
                 <Send size={20} />
                 <span>Send Message</span>
               </button>
-              <button
-                type="button"
-                onClick={() => {
-                  window.open('https://wa.me/91XXXXXXXXXX', '_blank')
-                }}
-                className="btn-secondary flex items-center gap-2 flex-1"
+              <a
+                href="https://wa.me/919560267221"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary flex items-center gap-2 justify-center flex-1"
               >
                 <MessageSquare size={20} />
                 <span>WhatsApp</span>
-              </button>
+              </a>
             </motion.div>
 
             {submitted && (
